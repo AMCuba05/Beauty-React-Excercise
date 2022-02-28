@@ -1,1 +1,1 @@
-export const USERS_ENDPOINT = 'users';
+export const USERS_ENDPOINT = 'https://jsonplaceholder.typicode.com/users';
