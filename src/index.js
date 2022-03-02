@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'antd/dist/antd.css';
+import './fonts/avenir-next/AvenirNext-Regular-08.ttf'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

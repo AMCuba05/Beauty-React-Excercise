@@ -14,7 +14,7 @@ export const UserCard = ({data}) => {
     }
     return (
         <Card
-            style={{ width: 350, marginLeft: '25px', marginRight: '25px', marginBottom: '40px' }}
+            style={{ width: 350, marginLeft: '25px', marginRight: '25px', marginBottom: '40px', fontFamily: 'AvenirNext' }}
             cover={
                 <img
                     alt="example"
