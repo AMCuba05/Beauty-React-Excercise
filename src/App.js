@@ -1,13 +1,10 @@
 import './App.css';
-import {CommonText} from "./components/Text/Common";
-import {TitleText} from "./components/Text/Title";
+import { Home } from './pages/Home'
 
 function App() {
+
   return (
-    <div>
-        <TitleText>title</TitleText>
-        <CommonText>common</CommonText>
-    </div>
+    <Home/>
   );
 }
 
