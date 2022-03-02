@@ -7,9 +7,14 @@ const { Meta } = Card;
 
 export const UserCard = ({data}) => {
 
+    const [ fav, setFav ] = useState(false)
+
+    const onClickFav = () => {
+        setFav(!fav)
+    }
     return (
         <Card
-            style={{ width: 300, marginLeft: '40px', marginRight: '40px', marginBottom: '40px' }}
+            style={{ width: 350, marginLeft: '25px', marginRight: '25px', marginBottom: '40px' }}
             cover={
                 <img
                     alt="example"
@@ -19,11 +24,11 @@ export const UserCard = ({data}) => {
         >
             <Meta
                 avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
-                title={data ? data.username : ''}
+                title={data ? data.name : ''}
                 description={`${data ? data.address.city : ''}, ${data ? data.address.street : ''}`}
             />
-            <div className={'like-container'}>
-                { true ?
+            <div className={'like-container'} onClick={onClickFav}>
+                { fav ?
                     <HeartFilled style={{color: 'rgb(224, 84, 112)'}} /> : <HeartOutlined />
                 }
             </div>

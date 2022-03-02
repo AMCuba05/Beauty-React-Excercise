@@ -1,5 +1,5 @@
 import {Button} from "antd";
 
 export const CommonButton = ({children, color}) => {
-    return<Button style={{background: 'rgb(224, 84, 112)', borderRadius: 10, outline: 'none' }} size={'large'} type="primary">{children}</Button>
+    return<Button style={{background: color, borderRadius: 10, borderWidth: '0px' }} size={'large'} type="primary">{children}</Button>
 }
