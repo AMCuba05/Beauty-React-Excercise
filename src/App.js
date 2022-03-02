@@ -1,11 +1,12 @@
 import './App.css';
+import {CommonText} from "./components/Text/Common";
+import {TitleText} from "./components/Text/Title";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          <button>Hola</button>
-      </header>
+    <div>
+        <TitleText>title</TitleText>
+        <CommonText>common</CommonText>
     </div>
   );
 }
